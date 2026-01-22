@@ -27,7 +27,7 @@ const Navbar = ({ handleSearch }) => {
             <span className='font-bold'>Recipes</span>
           </Link>
 
-          <form onSubmit={searchHandler} className='flex-1 max-w-lg mr-20 hidden sm:flex'>
+          <form onSubmit={searchHandler} className='flex-1 max-w-lg mx-4 hidden sm:flex'>
             <input
               type="text"
               value={input}
@@ -41,6 +41,24 @@ const Navbar = ({ handleSearch }) => {
             </button>
           </form>
 
+        </div>
+        {/* Mobile Search (NEW) */}
+        <div className="sm:hidden px-2 pb-3">
+          <form onSubmit={searchHandler} className="flex">
+            <input
+              type="text"
+              value={input}
+              onChange={(e) => setInput(e.target.value)}
+              className="w-full px-4 py-2 rounded-l-full bg-gray-900 text-white border border-gray-700 focus:outline-none"
+              placeholder="Search dishes, ingredients or cuisines"
+            />
+            <button
+              type="submit"
+              className="bg-blue-600 px-3 rounded-r-full text-white"
+            >
+              <Search />
+            </button>
+          </form>
         </div>
       </div>
     </nav>

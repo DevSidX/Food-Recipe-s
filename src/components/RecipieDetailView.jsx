@@ -47,15 +47,15 @@ const RecipieDetailView = () => {
       </Link>
 
       <div className="bg-gray-900 p-6 md:p-12 rounded-3xl shadow-2xl shadow-black/70 border border-gray-800">
-        <div className="lg:flex lg:space-x-12">
+        <div className="flex flex-col lg:flex-row lg:space-x-12">
 
           <div className="lg:w-1/2 mb-8 lg:mb-0">
-            <h1 className='text-4xl font-black text-gray-100 mb-6 leading-tight'>
+            <h1 className='text-2xl sm:text-3xl md:text-4xl font-black text-gray-100 mb-6 leading-tight'>
               {meal?.strMeal}
             </h1>
             <img
               src={meal.strMealThumb}
-              className='w-100 h-100 rounded-xl shadow-2xl shadow-black/50 object-cover border-4 border-gray-800 ring-2 ring-blue-500/50 mx-5' />
+              className='w-full max-w-sm sm:max-w-md mx-auto rounded-xl shadow-2xl shadow-black/50 object-cover border-4 border-gray-800 ring-2 ring-blue-500/50' />
           </div>
 
           <div className="lg:w-1/2 bg-gray-800 rounded-xl shadow-inner shadow-black/30 border border-gray-700">

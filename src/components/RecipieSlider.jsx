@@ -13,12 +13,22 @@ const RecipieSlider = ({ title, fetchUrl }) => {
   const settings = {
     dots: false,
     infinite: true,
-    speed: 1000,
+    speed: 800,
     slidesToShow: 3,
     slidesToScroll: 1,
     autoplay: true,
-    autoplaySpeed: 2000,
+    autoplaySpeed: 2500,
     cssEase: "linear",
+    responsive: [
+      {
+        breakpoint: 1024, // Tablet
+        settings: { slidesToShow: 2 }
+      },
+      {
+        breakpoint: 640, // Mobile
+        settings: { slidesToShow: 1 }
+      }
+    ]
   };
 
   if (loading) {

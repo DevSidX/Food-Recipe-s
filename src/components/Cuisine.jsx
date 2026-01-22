@@ -19,7 +19,7 @@ const Cuisine = ({ filterByArea }) => {
       <div className='bg-gray-900/80 border-b border-y-gray-800 shadow-inner shadow-black/20'>
         <div className="max-w-8xl mx-auto px-4 lg:px-8 overflow-x-auto ">
 
-          <div className="flex space-x-4 py-3 items-center m-0">
+          <div className="flex flex-wrap gap-3 py-3 items-center">
             <div className="flex items-center text-lg font-bold text-green-400 pr-2 whitespace-nowrap">
               <Globe className="w-5 h-5 mr-2" />Global Cuisines:
             </div>
@@ -28,8 +28,8 @@ const Cuisine = ({ filterByArea }) => {
                 to={`/search/${area}`}
                 key={area}
                 onClick={() => filterByArea(area)}
-                className='cursor-pointer text-gray-200 text-sm whitespace-nowrap font-medium 
-               hover:text-white transition duration-200 py-1.5 px-4 rounded-full 
+                className='cursor-pointer text-gray-200 text-xs sm:text-sm whitespace-nowrap font-medium 
+               hover:text-white transition duration-200 py-1.5 px-3 sm:px-4 rounded-full 
                bg-gray-800 border-gray-700 hover:bg-blue-600 hover:shadow-lg 
                hover:shadow-blue-800/50 transform hover:scale-[1.05]'> {area}
               </Link>)

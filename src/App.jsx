@@ -64,7 +64,7 @@ function App() {
 
   return (
     <Router>
-      <div className="min-h-screen bg-gray-950 text-gray-100">
+      <div className="min-h-screen bg-gray-950 overflow-x-hidden text-gray-100">
 
         <Navbar handleSearch={handleSearch}/>
         <CuisineBar filterByArea={filterByArea} />

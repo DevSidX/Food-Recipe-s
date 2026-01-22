@@ -20,6 +20,10 @@ const TrendingSlider = ({ title, fetchUrl }) => {
     autoplay: true,
     autoplaySpeed: 2000,
     cssEase: "linear",
+    responsive: [
+      { breakpoint: 1024, settings: { slidesToShow: 4 } },
+      { breakpoint: 640, settings: { slidesToShow: 2 } },
+    ]
   };
 
   if (loading) {
@@ -50,7 +54,7 @@ const TrendingSlider = ({ title, fetchUrl }) => {
                     <div className="flex justify-center items-center p-5">       {/* image*/}
                       <img
                         src={meal?.strMealThumb}
-                        className='`h-[120px] w-[120px]` rounded-xl border border-yellow-400 transition duration-500 group-hover:scale-105' />
+                        className='h-20 w-20 sm:h-24 sm:w-24 rounded-xl border border-yellow-400 transition duration-500 group-hover:scale-105' />
                     </div>
                   </div>
                 </Link>
