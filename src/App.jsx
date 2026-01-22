@@ -6,6 +6,7 @@ import CuisineBar from './components/Cuisine'
 import HomeView from './components/HomeView'
 import { useCallback } from 'react'
 import { useState } from 'react'
+import Footer from './components/Footer'
 
 const API_URL = 'https://www.themealdb.com/api/json/v1/1/'
 
@@ -66,7 +67,7 @@ function App() {
     <Router>
       <div className="min-h-screen bg-gray-950 overflow-x-hidden text-gray-100">
 
-        <Navbar handleSearch={handleSearch}/>
+        <Navbar handleSearch={handleSearch} />
         <CuisineBar filterByArea={filterByArea} />
 
         <Routes>
@@ -87,7 +88,7 @@ function App() {
               />}
           />
         </Routes>
-
+        <Footer />
       </div>
     </Router>
   )

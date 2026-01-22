@@ -7,7 +7,7 @@ const SearchView = ({ meals, loading }) => {
   return (
     <>
       <main className='max-w-8xl mx-auto px-4 sm:px-6 lg:py-8 py-8'>
-        <Link to={'/'} className='text-yellow-400 hover:text-yellow-300 flex items-center mb-6 font-medium transition text-lg group'>
+        <Link to={'/'} className='text-green-400 hover:text-green-300 flex items-center mb-6 font-medium transition text-lg group'>
           <ChevronLeft className='w-6 h-6 m-1 transition' /> Back to Dashboard
         </Link>
       </main>

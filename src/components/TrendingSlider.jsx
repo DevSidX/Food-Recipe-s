@@ -36,7 +36,7 @@ const TrendingSlider = ({ title, fetchUrl }) => {
   return (
     <>
       <section className='mt-4 mx-auto'>
-        <h2 className='text-3xl font-extrabold text-gray-100 mb-6 tracking-tight border-1-4 border-yellow-400 pl-4 flex items-center'>
+        <h2 className='text-3xl font-bold text-gray-100 mb-6 tracking-tight border-l-4 border-green-400 pl-4 flex items-center'>
           <Clock className='w-6 h-6 m-3 text-blue-500' />
           {title}
         </h2>
@@ -54,7 +54,7 @@ const TrendingSlider = ({ title, fetchUrl }) => {
                     <div className="flex justify-center items-center p-5">       {/* image*/}
                       <img
                         src={meal?.strMealThumb}
-                        className='h-20 w-20 sm:h-24 sm:w-24 rounded-xl border border-yellow-400 transition duration-500 group-hover:scale-105' />
+                        className='h-20 w-20 sm:h-24 sm:w-24 rounded-xl border border-green-400 transition duration-500 group-hover:scale-105' />
                     </div>
                   </div>
                 </Link>

@@ -19,20 +19,11 @@ const RecipieSlider = ({ title, fetchUrl }) => {
     autoplay: true,
     autoplaySpeed: 2500,
     cssEase: "linear",
-    responsive: [
-      {
-        breakpoint: 1024, // Tablet
-        settings: { slidesToShow: 2 }
-      },
-      {
-        breakpoint: 640, // Mobile
-        settings: { slidesToShow: 1 }
-      }
-    ]
+    
   };
 
   if (loading) {
-    return <div className="text-center p-8 text-gray">
+    return <div className="text-center p-6 text-gray-300">
       <Loader className='animate-spin inline-block mr-2 text-blue-400' />
       Loading {title}...
     </div>
@@ -41,11 +32,11 @@ const RecipieSlider = ({ title, fetchUrl }) => {
   return (
     <>
       <section className='mt-4 mx-auto'>
-        <h2 className='text-3xl font-extrabold text-gray-100 mb-6 tracking-tight border-1-4 border-yellow-400 pl-4 flex items-center'>
+        <h2 className='text-xl sm:text-2xl md:text-3xl font-bold text-gray-100 mb-4 tracking-tight border-l-4 border-green-400 pl-4 flex items-center'>
           <Clock className='w-6 h-6 m-3 text-blue-500' />
           {title}
         </h2>
-        <div style={{ width: '90%', margin: 'auto', padding: '10px' }}>
+        <div className="w-full mx-auto">
           <Slider {...settings}>
             {meals.map((meal) =>
               <div key={meal.idMeal} className='px-10 flex justify-center'>
