@@ -1,29 +1,31 @@
-.
+# Food Recipe App
 
-🍽️ Food Recipe App
+A modern **Food Recipe Web Application** built using **React** and **Vite** that allows users to explore recipes by category, cuisine, and trending dishes, with detailed recipe views and search functionality.
 
-A modern Food Recipe Web Application built using React + Vite that allows users to explore recipes by category, cuisine, and trending dishes, with detailed recipe views and search functionality.
+---
 
-🚀 Features
+## Features
 
-🔍 Search recipes by name
+- Search recipes by name  
+- Browse by cuisine and category  
+- View trending recipes  
+- Detailed recipe instructions  
+- Clean and responsive user interface  
+- Fast performance with Vite  
 
-🍜 Browse by cuisine and category
+---
 
-📈 View trending recipes
+## Tech Stack
 
-📖 Detailed recipe instructions
+**Frontend:** React (JSX)  
+**Build Tool:** Vite  
+**Styling:** CSS  
+**API:** Recipe/Food API (via `useFetch.js`)  
 
-🎨 Clean and responsive UI
+---
 
-⚡ Fast performance with Vite
+## Project Setup
 
-🛠️ Tech Stack
-
-Frontend: React (JSX)
-
-Build Tool: Vite
-
-Styling: CSS
-
-API: Recipe/Food API (via useFetch.js)
+### 1. Clone the Repository
+```bash
+git clone https://github.com/DevSidX/Food-Recipe-s.git
