@@ -10,7 +10,7 @@ const RecipieCard = ({ meal }) => {
         </div>
 
         <div className="flex justify-center items-center p-5">       {/* image*/}
-          <img src={meal?.strMealThumb} alt="" className='h-40 w-40 sm:h-52 sm:w-52 md:h-60 md:w-60 rounded-xl border border-yellow-400 transition duration-500 group-hover:scale-105' />
+          <img src={meal?.strMealThumb} alt="" className='w-full max-w-[220px] aspect-square object-cover rounded-xl border border-green-400 transition duration-500 group-hover:scale-105' />
         </div>
 
         <div className="p-2 text-center">
