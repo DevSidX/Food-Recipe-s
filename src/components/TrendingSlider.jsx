@@ -36,7 +36,7 @@ const TrendingSlider = ({ title, fetchUrl }) => {
   return (
     <>
       <section className='mt-4 mx-auto'>
-        <h2 className='text-3xl font-bold text-gray-100 mb-6 tracking-tight border-l-4 border-green-400 pl-4 flex items-center'>
+        <h2 className='text-3xl font-bold text-gray-100 mb-6 tracking-tight  border-green-400 pl-4 flex items-center'>
           <Clock className='w-6 h-6 m-3 text-blue-500' />
           {title}
         </h2>
