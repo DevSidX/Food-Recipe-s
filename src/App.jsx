@@ -69,26 +69,25 @@ function App() {
 
         <Navbar handleSearch={handleSearch} />
         <CuisineBar filterByArea={filterByArea} />
-        <div className="grow min-h-[70vh] flex flex-col">
-          <Routes>
-            <Route
-              path='/'
-              element={<HomeView filterByCategory={filterByCategory} />}
-            />
-            <Route
-              path='/Recipe/:id'   // :id is the dynamic name of the id  
-              element={<RecipieDetailView />}
-            />
-            <Route
-              path='/search/:query'
-              element={
-                <SearchView
-                  meals={searchResult}
-                  loading={searchLoading}
-                />}
-            />
-          </Routes>
-        </div>
+
+        <Routes>
+          <Route
+            path='/'
+            element={<HomeView filterByCategory={filterByCategory} />}
+          />
+          <Route
+            path='/Recipe/:id'   // :id is the dynamic name of the id  
+            element={<RecipieDetailView />}
+          />
+          <Route
+            path='/search/:query'
+            element={
+              <SearchView
+                meals={searchResult}
+                loading={searchLoading}
+              />}
+          />
+        </Routes>
         <Footer />
       </div>
     </Router>
